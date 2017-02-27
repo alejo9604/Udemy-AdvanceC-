@@ -35,6 +35,7 @@ public class Orbiter : MonoBehaviour
 
 		//Adjust position
 		ThisTransform.position = Pivot.position + ThisTransform.rotation * Vector3.forward * -PivotDistance;
+		//Pivot.rotation = Quaternion.LookRotation(ThisTransform.position - Pivot.position, Vector3.up);
 	}
 	//---------------------------------------------------
 }
