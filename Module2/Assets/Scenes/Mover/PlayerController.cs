@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
 		IsGrounded = (DistanceToGround() < GroundedDist) ? true : false;
 
 		//Should we jump?
-		if(CrossPlatformInputManager.GetAxisRaw("Jump")!=0 && IsGrounded)
+		if(CrossPlatformInputManager.GetAxisRaw("Jump") != 0 && IsGrounded)
 			Velocity.y = JumpForce;
 
 		//Apply gravity
