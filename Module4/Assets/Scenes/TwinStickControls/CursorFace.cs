@@ -13,8 +13,7 @@ public class CursorFace : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		Vector3 MousePosWorld = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,
-																Input.mousePosition.y, 0f));
+		Vector3 MousePosWorld = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0f));
 
 		MousePosWorld = new Vector3(MousePosWorld.x, ThisTransform.position.y, MousePosWorld.z);
 
