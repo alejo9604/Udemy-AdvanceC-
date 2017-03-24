@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/Hover/Hovering.unity
-  isLoaded: 1
-  isActive: 1
