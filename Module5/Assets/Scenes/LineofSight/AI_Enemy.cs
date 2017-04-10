@@ -42,7 +42,7 @@ public class AI_Enemy : MonoBehaviour
 	private LineSight ThisLineSight = null;
 
 	//Reference to nav mesh agent
-	private NavMeshAgent ThisAgent = null;
+	private UnityEngine.AI.NavMeshAgent ThisAgent = null;
 
 	//Reference to transform
 	private Transform ThisTransform = null;
@@ -62,7 +62,7 @@ public class AI_Enemy : MonoBehaviour
 	void Awake()
 	{
 		ThisLineSight = GetComponent<LineSight>();
-		ThisAgent = GetComponent<NavMeshAgent>();
+		ThisAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
 		ThisTransform = GetComponent<Transform>();
 		PlayerTransform = PlayerHealth.GetComponent<Transform>();
 	}
